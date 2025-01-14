@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%; /* Asegura que el html y body ocupen todo el viewport */
+  width: 100%;
+}
+
+#root {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Personaliza la barra completa */
+::-webkit-scrollbar {
+  width: 10px; /* Ancho de la barra vertical */
+  height: 10px; /* Alto de la barra horizontal */
+}
+
+/* Personaliza el "pulgar" (scrollbar-thumb) */
+::-webkit-scrollbar-thumb {
+  background: #222; /* Color del pulgar */
+  border-radius: 15px; /* Bordes redondeados */
+}
+
+/* Personaliza la pista (scrollbar-track) */
+::-webkit-scrollbar-track {
+  background: #999; /* Color del fondo */
+  border-radius: 15px; /* Bordes redondeados */
+}
