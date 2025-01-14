@@ -2,7 +2,6 @@ import propTypes from 'prop-types';
 import { useState } from 'react';
 
 export const PrivChatMessage = ({ message, type }) => {
-    console.log(type);
     const [messageType] = useState(type == 'enviado' ? 'end' : 'start');
     return (
         <div
